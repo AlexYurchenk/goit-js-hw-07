@@ -6,10 +6,10 @@ const ingredients = [
     'Зелень',
     'Приправы',
   ];
-const ingredientsIdsearchEl = document.querySelector('#ingredients');
+const ingredientsIdSearchEl = document.querySelector('#ingredients');
 
 ingredients.forEach(ingredient =>{
-  const ingredientsLicreateEl = document.createElement('li');
-  ingredientsLicreateEl.textContent = ingredient;
-  ingredientsIdsearchEl.append(ingredientsLicreateEl)
+  const ingredientsLiCreateEl = document.createElement('li');
+  ingredientsLiCreateEl.textContent = ingredient;
+  ingredientsIdSearchEl.append(ingredientsLiCreateEl)
 });
