@@ -25,7 +25,7 @@ const images = [
     `;
   };
   const counterSearchEl = document.querySelector('#gallery');
-  const imgonListOn = images
+  const imagesListOn = images
   .map(makeImgGalleryEl)
   .join('');
-  counterSearchEl.insertAdjacentHTML('beforeend', imgonListOn);
+  counterSearchEl.insertAdjacentHTML('beforeend', imagesListOn);

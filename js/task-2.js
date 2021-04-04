@@ -7,8 +7,9 @@ const ingredients = [
     'Приправы',
   ];
 const ingredientsIdsearchEl = document.querySelector('#ingredients');
-for (const ingredient of ingredients){
-   const ingredientsLicreateEl = document.createElement('li');
-   ingredientsLicreateEl.textContent = ingredient;
-   ingredientsIdsearchEl.append(ingredientsLicreateEl)
-}
+
+ingredients.forEach(ingredient =>{
+  const ingredientsLicreateEl = document.createElement('li');
+  ingredientsLicreateEl.textContent = ingredient;
+  ingredientsIdsearchEl.append(ingredientsLicreateEl)
+});

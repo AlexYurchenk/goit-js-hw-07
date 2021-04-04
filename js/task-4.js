@@ -2,12 +2,12 @@ const counterEl =  document.querySelector('#counter');
 const counterSpanEl = document.querySelector('#value');
 const counterDecrementBtnEl = counterEl.querySelector('button[data-action="decrement"]');
 const counterIncrementBtnEl = counterEl.querySelector('button[data-action="increment"]');
-let changecounterSpanEl = Number(counterSpanEl.textContent);
+let changcounterSpanEl = Number(counterSpanEl.textContent);
 counterDecrementBtnEl.addEventListener('click' , () => {
-    changecounterSpanEl -= 1;
-    counterSpanEl.innerHTML = changecounterSpanEl;
+    changcounterSpanEl -= 1;
+    counterSpanEl.textContent = changcounterSpanEl;
 });
 counterIncrementBtnEl.addEventListener('click' , () => {
-    changecounterSpanEl += 1;
-    counterSpanEl.innerHTML = changecounterSpanEl;
+    changcounterSpanEl += 1;
+    counterSpanEl.textContent = changcounterSpanEl;
 });
